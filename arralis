@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+    public static void main(String[] args) {
+        // Create an ArrayList to store strings
+        ArrayList<String> names = new ArrayList<>();
+
+        // Adding elements to the ArrayList
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        // Accessing elements in the ArrayList
+        System.out.println("First name: " + names.get(0)); // Output: Alice
+        System.out.println("Second name: " + names.get(1)); // Output: Bob
+
+        // Iterating through the ArrayList using a for-each loop
+        System.out.println("All names:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // Getting the size of the ArrayList
+        int size = names.size();
+        System.out.println("Number of names: " + size); // Output: 3
+
+        // Removing an element from the ArrayList
+        names.remove(1); // Remove "Bob"
+
+        // Checking if an element exists in the ArrayList
+        boolean containsCharlie = names.contains("Charlie");
+        System.out.println("Does names contain Charlie? " + containsCharlie); // Output: true
+
+        // Clearing all elements from the ArrayList
+        names.clear();
+
+        // Checking if the ArrayList is empty
+        boolean isEmpty = names.isEmpty();
+        System.out.println("Is names empty? " + isEmpty); // Output: true
+    }
+}
